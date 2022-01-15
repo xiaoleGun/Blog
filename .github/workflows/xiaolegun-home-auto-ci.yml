@@ -1,0 +1,22 @@
+name: xiaolegun-home-auto-push-ci
+
+on: [push]
+
+jobs:
+  xiaolegun-home-auto-push:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install coscmd
+      run: sudo pip install coscmd
+    - name: Configure coscmd
+      env:
+        SECRET_ID: ${{ secrets.SECRET_ID }}
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        BUCKET: xiaolegun-1301407139
+        REGION: ap-beijing
+      run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+    - name: Upload to cos
+      run: coscmd upload -r ./ / --ignore "./.git/*"
