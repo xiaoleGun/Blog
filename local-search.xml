@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Phh-Trebel-Project</title>
+    <link href="/2022/Phh-Treble/"/>
+    <url>/2022/Phh-Treble/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Phh-Treble-Project"><a href="#Phh-Treble-Project" class="headerlink" title="Phh-Treble-Project"></a>Phh-Treble-Project</h1><p>这是由我xiaoleGun自发的项目其初衷就是为了华为老机型或其它没有专包编译不了专包的机子使用，<br/><br>此次为exTHmUI制作Phh-treble，以后可能还会有更多的类原生在华为手机上运行！</p><blockquote><p>警告：这是一个GSI(通刷镜像)不是某一个设备的专包，请仔细辨别！</p></blockquote><blockquote><p>警告2：这是AB(SAR)的镜像，不支持A-only</p></blockquote><p>建议使用 <strong>Chrome、Safari、Edge</strong> 浏览器，体验最佳效果。</p><h2 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h2><blockquote><p>目前有exthmui-12、11，后续会添加。</p></blockquote><blockquote><p>由于Phh-Treble需要编译，可能效率低</p></blockquote><p><a href="https://pan.xiaolegun.cn/GSI/Phh-Treble/">https://pan.xiaolegun.cn/GSI/Phh-Treble/</a></p><h2 id="通用方法"><a href="#通用方法" class="headerlink" title="通用方法"></a>通用方法</h2><p>1.刷入你的最新版本原系统支持Project Treble的vendor(供应商)，不确定请使用Treble App检查！</p><p>2.使用adb、fastboot或twrp刷入镜像，等待开机（部分机型可能需要换内核为宽容)</p><h2 id="华为专用方法"><a href="#华为专用方法" class="headerlink" title="华为专用方法"></a>华为专用方法</h2><p>1.下载盘古工具箱！</p><p>2.970确保底包为9.1.312或321，960随意也可以9.1.312也可以鸿蒙做底包</p><p>3.如果以前root了，请使用盘古工具箱恢复root之前状态并恢复官方REC，然后进入EREC工厂级格式化DATA</p><p>4.返回fastboot使用盘古工具箱刷入system.img(即exTHmUI)，960换sdw的内核(理论上也不用)，970不用换</p><p>5.开机或拿盘古重新刷入Magisk</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>GSI</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>你好朋友</title>
+    <link href="/2022/Hello-friend/"/>
+    <url>/2022/Hello-friend/</url>
+    
+    <content type="html"><![CDATA[<h2 id="关于咱"><a href="#关于咱" class="headerlink" title="关于咱"></a>关于咱</h2><p>一个弱鸡罢了，什么都不会。</p><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>用的是fluid，github搜一下就有了</p><h2 id="干什么？"><a href="#干什么？" class="headerlink" title="干什么？"></a>干什么？</h2><p>这个博客是用来分享平时的经验，以及ROM。当然有时间写是大前提。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>闲谈</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
