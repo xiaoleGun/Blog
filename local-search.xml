@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>关于博客</title>
+    <link href="/article/about-blog/"/>
+    <url>/article/about-blog/</url>
+    
+    <content type="html"><![CDATA[<h1 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h1><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><h3 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h3><p>如你看到的那样，很新颖的页面，遵从了MD规范的<a href="https://github.com/fluid-dev/hexo-theme-fluid">主题</a></p><h3 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h3><p>咱使用了Vainle的评论系统，怎么说捏<del>特别好用！！！那头像怎么配置捏</del></p><h4 id="头像"><a href="#头像" class="headerlink" title="头像"></a>头像</h4><p>Valine 目前使用的是[Gravatar][1] 作为评论列表头像。</p><p>请自行登录或注册[Gravatar][1]，然后修改自己的头像。</p><p>评论的时候，留下在[Gravatar][1]注册时所使用的邮箱即可。</p><p>感谢<code>gravatar.cat.net</code>提供的镜像服务。  </p><blockquote><p>如果你修改了头像后发现没有更新，请不要慌张，因为<code>gravatar.cat.net</code> 有七天的缓存期，安静的等待吧~</p></blockquote><p>目前<code>非自定义头像</code>有以下7种<code>默认值</code>可选:  </p><table><thead><tr><th align="center">参数值</th><th align="center">表现形式</th><th>备注</th></tr></thead><tbody><tr><td align="center">空字符串<code>&#39;&#39;</code></td><td align="center"><img src="//gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40" alt="Gravatar官方图形"></td><td>Gravatar官方图形</td></tr><tr><td align="center"><code>mp</code></td><td align="center"><img src="//gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40&d=mp" alt="神秘人(一个灰白头像)"></td><td>神秘人(一个灰白头像)</td></tr><tr><td align="center"><code>identicon</code></td><td align="center"><img src="//gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40&d=identicon" alt="抽象几何图形"></td><td>抽象几何图形</td></tr><tr><td align="center"><code>monsterid</code></td><td align="center"><img src="//gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40&d=monsterid" alt="小怪物"></td><td>小怪物</td></tr><tr><td align="center"><code>wavatar</code></td><td align="center"><img src="//gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40&d=wavatar" alt="用不同面孔和背景组合生成的头像"></td><td>用不同面孔和背景组合生成的头像</td></tr><tr><td align="center"><code>retro</code></td><td align="center"><img src="//gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40&d=retro" alt="八位像素复古头像"></td><td>八位像素复古头像</td></tr><tr><td align="center"><code>robohash</code></td><td align="center"><img src="//gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40&d=robohash" alt="机器人"></td><td>一种具有不同颜色、面部等的机器人</td></tr><tr><td align="center"><code>hide</code></td><td align="center">&nbsp;</td><td>不显示头像</td></tr></tbody></table><figure class="highlight js"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">new</span> Valine(&#123;<br>    ...<br>    <span class="hljs-attr">avatar</span>:<span class="hljs-string">&#x27;&#x27;</span> <span class="hljs-comment">// (&#x27;&#x27;/mp/identicon/monsterid/wavatar/robohash/retro/hide)</span><br>&#125;);<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>闲谈</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Project-Mushroom</title>
     <link href="/article/Project-Mushroom/"/>
     <url>/article/Project-Mushroom/</url>
@@ -23,7 +42,7 @@
   
   
   <entry>
-    <title>Phh-Trebel-Project</title>
+    <title>Phh-Treble-Project</title>
     <link href="/article/Phh-Treble/"/>
     <url>/article/Phh-Treble/</url>
     
