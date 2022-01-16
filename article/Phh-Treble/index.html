@@ -26,7 +26,7 @@
 <meta property="og:description" content="Phh-Treble-Project这是由我xiaoleGun自发的项目其初衷就是为了华为老机型或其它没有专包编译不了专包的机子使用，此次为exTHmUI制作Phh-treble，以后可能还会有更多的类原生在华为手机上运行！  警告：这是一个GSI(通刷镜像)不是某一个设备的专包，请仔细辨别！   警告2：这是AB(SAR)的镜像，不支持A-only  建议使用 Chrome、Safari、Edg">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-01-15T07:44:35.000Z">
-<meta property="article:modified_time" content="2022-01-16T02:35:23.000Z">
+<meta property="article:modified_time" content="2022-01-16T03:03:40.420Z">
 <meta property="article:author" content="xiaoleGun">
 <meta property="article:tag" content="GSI">
 <meta name="twitter:card" content="summary_large_image">
@@ -207,15 +207,6 @@
   
 </div>
 
-{%if post.updated and post.updated > post.date%}
-  <span class="post-updated">
-    &nbsp; | &nbsp; {{ __('post.updated') }}
-    <time itemprop="dateUpdated" datetime="{{ moment(post.updated).format() }}" content="{{ date(post.updated, config.date_format) }}">
-      {{ date(post.updated, config.date_format) }}
-    </time>
-  </span>
-{% endif %}
-
 <div class="mt-1">
   
     <span class="post-meta mr-2">
@@ -259,6 +250,12 @@
           <article class="post-content mx-auto">
             <!-- SEO header -->
             <h1 style="display: none">Phh-Treble-Project</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：1 分钟前
+                
+              </p>
             
             <div class="markdown-body">
               <h1 id="Phh-Treble-Project"><a href="#Phh-Treble-Project" class="headerlink" title="Phh-Treble-Project"></a>Phh-Treble-Project</h1><p>这是由我xiaoleGun自发的项目其初衷就是为了华为老机型或其它没有专包编译不了专包的机子使用，<br/><br>此次为exTHmUI制作Phh-treble，以后可能还会有更多的类原生在华为手机上运行！</p>

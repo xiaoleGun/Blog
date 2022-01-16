@@ -21,7 +21,7 @@
     <meta name="description" content="很高兴见到你捏~">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于博客">
-<meta property="og:url" content="https://blog.xiaolegun.cn/article/about-blog/index.html">
+<meta property="og:url" content="https://blog.xiaolegun.cn/article/About-Blog/index.html">
 <meta property="og:site_name" content="xiaoleGun&#39;Blog">
 <meta property="og:description" content="很高兴见到你捏~">
 <meta property="og:locale" content="zh_CN">
@@ -33,7 +33,7 @@
 <meta property="og:image" content="https://gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40&d=retro">
 <meta property="og:image" content="https://gravatar.loli.net/avatar/d41d8cd98f00b204e9800998ecf8427e?s=40&d=robohash">
 <meta property="article:published_time" content="2022-01-16T02:26:52.000Z">
-<meta property="article:modified_time" content="2022-01-16T02:46:52.000Z">
+<meta property="article:modified_time" content="2022-01-16T03:04:00.420Z">
 <meta property="article:author" content="xiaoleGun">
 <meta property="article:tag" content="闲谈">
 <meta name="twitter:card" content="summary_large_image">
@@ -215,15 +215,6 @@
   
 </div>
 
-{%if post.updated and post.updated > post.date%}
-  <span class="post-updated">
-    &nbsp; | &nbsp; {{ __('post.updated') }}
-    <time itemprop="dateUpdated" datetime="{{ moment(post.updated).format() }}" content="{{ date(post.updated, config.date_format) }}">
-      {{ date(post.updated, config.date_format) }}
-    </time>
-  </span>
-{% endif %}
-
 <div class="mt-1">
   
     <span class="post-meta mr-2">
@@ -267,6 +258,12 @@
           <article class="post-content mx-auto">
             <!-- SEO header -->
             <h1 style="display: none">关于博客</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：几秒前
+                
+              </p>
             
             <div class="markdown-body">
               <h1 id="关于这个博客"><a href="#关于这个博客" class="headerlink" title="关于这个博客"></a>关于这个博客</h1><h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><h3 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h3><p>如你看到的那样，很新颖的页面，遵从了MD规范的<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">主题</a></p>
