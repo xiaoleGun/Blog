@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.xiaolegun.cn/about/index.html</loc>
+    
+    <lastmod>2022-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.xiaolegun.cn/post/Project-Mushroom/</loc>
     
     <lastmod>2022-01-16</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>https://blog.xiaolegun.cn/post/Hello-friend/</loc>
-    
-    <lastmod>2022-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.xiaolegun.cn/about/index.html</loc>
     
     <lastmod>2022-01-15</lastmod>
     
