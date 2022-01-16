@@ -413,6 +413,14 @@ img[lazyload] {
     border-bottom-color: #435266;
     transition: border-bottom-color 0.2s ease-in-out;
   }
+  :root:not([data-user-color-scheme]) .markdown-body h1,
+  :root:not([data-user-color-scheme]) .markdown-body h2,
+  :root:not([data-user-color-scheme]) .markdown-body h3,
+  :root:not([data-user-color-scheme]) .markdown-body h6,
+  :root:not([data-user-color-scheme]) .markdown-body h5 {
+    color: #ddd;
+    transition: all 0.2s ease-in-out;
+  }
   :root:not([data-user-color-scheme]) .markdown-body table tr {
     background-color: var(--board-bg-color);
     transition: background-color 0.2s ease-in-out;
@@ -493,6 +501,14 @@ img[lazyload] {
 [data-user-color-scheme='dark'] .markdown-body h2 {
   border-bottom-color: #435266;
   transition: border-bottom-color 0.2s ease-in-out;
+}
+[data-user-color-scheme='dark'] .markdown-body h1,
+[data-user-color-scheme='dark'] .markdown-body h2,
+[data-user-color-scheme='dark'] .markdown-body h3,
+[data-user-color-scheme='dark'] .markdown-body h6,
+[data-user-color-scheme='dark'] .markdown-body h5 {
+  color: #ddd;
+  transition: all 0.2s ease-in-out;
 }
 [data-user-color-scheme='dark'] .markdown-body table tr {
   background-color: var(--board-bg-color);
@@ -768,7 +784,7 @@ img[lazyload] {
 .navbar .nav-item .nav-link {
   display: block;
   color: var(--navbar-text-color);
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s, background-color 0.2s;
 }
 .navbar .nav-item .nav-link:hover {
   color: var(--link-hover-color);
@@ -931,7 +947,6 @@ label {
 .markdown-body h5,
 .markdown-body h6 {
   color: var(--post-heading-color);
-  transition: color 0.2s ease-in-out;
   font-weight: bold;
   margin-bottom: 0.75em;
   margin-top: 2em;
@@ -1176,24 +1191,13 @@ figure.highlight td.code > pre {
   left: 0;
   color: #757575;
   cursor: text;
-  transition: color 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, color 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 .toc-list-item {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.anchorjs-link {
-  text-decoration: none !important;
-  transition: opacity 0.2s ease-in-out;
-}
-.markdown-body h1:hover > .anchorjs-link,
-h2:hover > .anchorjs-link,
-h3:hover > .anchorjs-link,
-h4:hover > .anchorjs-link,
-h5:hover > .anchorjs-link,
-h6:hover > .anchorjs-link {
-  opacity: 1;
 }
 .iconfont {
   font-size: 1rem;
@@ -1431,9 +1435,6 @@ post-custom {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .anchorjs-link-left {
-    opacity: 0 !important;
-  }
 }
 .post-content h1::before,
 .post-content h2::before,
@@ -1579,9 +1580,6 @@ post-custom {
 }
 .toc-body::-webkit-scrollbar {
   display: none;
-}
-.tocbot-list {
-  position: relative;
 }
 .tocbot-list ol {
   list-style: none;
