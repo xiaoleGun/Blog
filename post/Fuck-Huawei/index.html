@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.xiaolegun.cn/img/Miku.png">
 <meta property="article:published_time" content="2022-02-19T12:37:55.000Z">
-<meta property="article:modified_time" content="2022-02-19T12:38:10.270Z">
+<meta property="article:modified_time" content="2022-02-19T13:04:28.513Z">
 <meta property="article:author" content="xiaoleGun">
 <meta property="article:tag" content="GSI">
 <meta name="twitter:card" content="summary_large_image">
@@ -213,7 +213,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.2k 字
+      1.6k 字
     </span>
   
 
@@ -222,7 +222,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      11 分钟
+      14 分钟
     </span>
   
 
@@ -292,19 +292,48 @@
 </ul>
 <h3 id="获取解锁码并解锁"><a href="#获取解锁码并解锁" class="headerlink" title="获取解锁码并解锁"></a>获取解锁码并解锁</h3><h4 id="渠道"><a href="#渠道" class="headerlink" title="渠道"></a>渠道</h4><p>1、可以在淘宝、咸鱼花个二三十获取解锁码，良心商家可能会用UAndroid给你一键解锁，但我建议你让他们给你获取解锁码，因为以防日后回锁或刷挂了，救砖之后回锁了，总之解锁码一劳永逸。</p>
 <p>2、找酷安@某贼PY一下</p>
-<h4 id="上手操作"><a href="#上手操作" class="headerlink" title="上手操作"></a>上手操作</h4><blockquote>
+<h4 id="上手操作"><a href="#上手操作" class="headerlink" title="上手操作"></a>上手操作</h4><h5 id="安装ADB"><a href="#安装ADB" class="headerlink" title="安装ADB"></a>安装ADB</h5><blockquote>
+<p>有了解锁码就可以开始这一步了。</p>
+</blockquote>
+<blockquote>
 <p>Win版</p>
 </blockquote>
 <ul>
-<li>先点击这里下载<a href="/huawei/adb.zip">ADB</a>，解压到C盘根目录，如图<br><img src="/img/huawei/8.png" srcset="/img/loading.gif" lazyload alt="ADB"><br>然后在电脑的开始菜单或搜索框搜索<code>电脑信息</code>，进入并拉到最下选择<code>高级系统设置</code><br><img src="/img/huawei/9.png" srcset="/img/loading.gif" lazyload alt="ADB_PATH"><br>点击<code>环境变量</code><br><img src="/img/huawei/10.png" srcset="/img/loading.gif" lazyload alt="环境变量"><br>在第二个对话栏(系统变量)下滑找到<code>Path</code><br><img src="/img/huawei/11.png" srcset="/img/loading.gif" lazyload alt="Path"><br>双击进去，在右面的对话框点击新建输入<code>%adb%</code><br><img src="/img/huawei/12.png" srcset="/img/loading.gif" lazyload alt="Path_2"><br>按确定返回到上一个菜单，在第二个对话栏(系统变量)，点击新建，变量名输入<code>adb</code>，变量值输入刚刚让你把解压后的文件夹放的路径。<br><img src="/img/huawei/13.png" srcset="/img/loading.gif" lazyload alt="Path_2"><br>然后可以去<code>Powershell</code> or <code>CMD</code>测试你的环境变量力</li>
+<li>先点击这里下载<a href="/img/huawei/platform-tools_r32.0.0-windows.zip">ADB</a>，解压到C盘根目录，如图<br><img src="/img/huawei/8.png" srcset="/img/loading.gif" lazyload alt="ADB"><br>然后在电脑的开始菜单或搜索框搜索<code>电脑信息</code>，进入并拉到最下选择<code>高级系统设置</code><br><img src="/img/huawei/9.png" srcset="/img/loading.gif" lazyload alt="ADB_PATH"><br>点击<code>环境变量</code><br><img src="/img/huawei/10.png" srcset="/img/loading.gif" lazyload alt="环境变量"><br>在第二个对话栏(系统变量)下滑找到<code>Path</code><br><img src="/img/huawei/11.png" srcset="/img/loading.gif" lazyload alt="Path"><br>双击进去，在右面的对话框点击新建输入<code>%adb%</code><br><img src="/img/huawei/12.png" srcset="/img/loading.gif" lazyload alt="Path_2"><br>按确定返回到上一个菜单，在第二个对话栏(系统变量)，点击新建，变量名输入<code>adb</code>，变量值输入刚刚让你把解压后的文件夹放的路径。<br><img src="/img/huawei/13.png" srcset="/img/loading.gif" lazyload alt="Path_2"><br>然后可以去<code>Powershell</code> or <code>CMD</code>测试你的环境变量力<br>不是Mac的可以跳过去刷机篇了</li>
 </ul>
 <blockquote>
-<p>Mac版<br>从现在开始会在Mac、Ubuntu完成写作了。因为小白篇和win通用，进阶篇需要ubuntu。</p>
+<p>Mac版</p>
+</blockquote>
+<blockquote>
+<p>从现在开始会在Mac、Ubuntu完成写作了。因为小白篇和win通用，进阶篇需要ubuntu。</p>
 </blockquote>
 <ul>
-<li>打开终端输入<figure class="highlight shell"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs shell">/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;<br></code></pre></td></tr></table></figure></li>
+<li>安装Homebrew，打开终端输入<figure class="highlight shell"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs shell">/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;<br></code></pre></td></tr></table></figure>
+<img src="/img/huawei/14.png" srcset="/img/loading.gif" lazyload alt="Homebrew"><br>输入密码，一路y(确定)<br>结束之后输入在终端输入<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">brew install cask android-platform-tools<br></code></pre></td></tr></table></figure>
+(冷知识，不知从什么时候开始brew需要将cask放在install才可以正常安装</li>
 </ul>
-<h2 id="刷机"><a href="#刷机" class="headerlink" title="刷机"></a>刷机</h2><h2 id="Root"><a href="#Root" class="headerlink" title="Root"></a>Root</h2>
+<h5 id="解锁BL"><a href="#解锁BL" class="headerlink" title="解锁BL"></a>解锁BL</h5><blockquote>
+<p>解锁</p>
+</blockquote>
+<blockquote>
+<p>解锁完BL开机出现Your device booting…都是正常现象</p>
+</blockquote>
+<ul>
+<li>手机重启到Fastboot<br><img src="/img/huawei/15.png" srcset="/img/loading.gif" lazyload alt="Fastboot"></li>
+<li>打开你刚刚配置好的Powershell或CMD或Mac终端，输入以下命令来解锁<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">fastboot oem unlock #16位数字解锁码<br></code></pre></td></tr></table></figure>
+如果不出意外的话你的手机会进入下面的界面<br><img src="/img/huawei/16.png" srcset="/img/loading.gif" lazyload alt="Unlock"><br>使用音量键选择Yes，然后它会重启到rec格式化Data<br>结束后重启回fastboot检查PHONE Lock是否变成<font color="#660000">PHONE Unlock</font><br /></li>
+</ul>
+<blockquote>
+<p>回锁</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">fastboot oem relock #16位数字解锁码<br></code></pre></td></tr></table></figure>
+<p>部分机型可能是</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">fastboot oem lock #16位数字解锁码<br></code></pre></td></tr></table></figure>
+
+<h2 id="刷机"><a href="#刷机" class="headerlink" title="刷机"></a>刷机</h2><blockquote>
+<p>重点介绍如何刷入Phh Treble</p>
+</blockquote>
+<h2 id="Root"><a href="#Root" class="headerlink" title="Root"></a>Root</h2>
             </div>
             <hr>
             <div>
