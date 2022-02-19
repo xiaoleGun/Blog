@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://blog.xiaolegun.cn/post/Phh-Treble/</loc>
-    
-    <lastmod>2022-02-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.xiaolegun.cn/about/index.html</loc>
     
     <lastmod>2022-01-16</lastmod>
@@ -32,15 +23,6 @@
     <loc>https://blog.xiaolegun.cn/post/About-Blog/</loc>
     
     <lastmod>2022-01-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.xiaolegun.cn/post/Hello-friend/</loc>
-    
-    <lastmod>2022-01-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -64,13 +46,6 @@
   
   <url>
     <loc>https://blog.xiaolegun.cn/tags/GSI/</loc>
-    <lastmod>2022-02-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.xiaolegun.cn/tags/ROM/</loc>
     <lastmod>2022-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
