@@ -23,6 +23,25 @@
   
   
   <entry>
+    <title>Project-Mushroom</title>
+    <link href="/post/Fuck-Huawei/"/>
+    <url>/post/Fuck-Huawei/</url>
+    
+    <content type="html"><![CDATA[<h1 id="华为搞机指北-小白向"><a href="#华为搞机指北-小白向" class="headerlink" title="华为搞机指北(小白向)"></a>华为搞机指北(小白向)</h1><h2 id="解锁"><a href="#解锁" class="headerlink" title="解锁"></a>解锁</h2><blockquote><p>这都不会小白向也拯救不了你惹</p></blockquote><h3 id="渠道"><a href="#渠道" class="headerlink" title="渠道"></a>渠道</h3><p>获取解锁码的渠道有很多，比如淘宝，咸鱼，只要可靠都可以，或者酷安找某贼。</p><h3 id="上手操作"><a href="#上手操作" class="headerlink" title="上手操作"></a>上手操作</h3><h4 id="降级"><a href="#降级" class="headerlink" title="降级"></a>降级</h4><blockquote><p>Emui 10及以上版本需要降级，Kirin960系不需要</p></blockquote><blockquote><p>推荐电脑系统为Windows10及以上</p></blockquote><ul><li><p>打开电脑，卸载原来的华为助手，下载<a href="https://github.com/ProfessorJTJ/HISuite-Proxy/releases/download/2.4/HISuite.Proxy.zip">HISuite-Proxy</a>和<a href="https://github.com/ProfessorJTJ/HISuite-Proxy/releases/download/2.3.6/HiSuite_11.0.0.530_OVE.rar">HiSuite V11.0.0.530OVE</a>解压并安装。</p></li><li><p>手机进入拨号输入<code>*#*#2846579#*#*</code>依次进入单板信息查询–&gt;版本信息找到CVersion:是什么C00或其它的，这是运营商定制版本号。</p></li><li><p>进入<a href="https://professorjtj.github.io/">Huawei Firm Finder</a></p><div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/img/huawei/1.png" alt="大包"></div><div class="group-image-wrap"><img src="/img/huawei/2.png" alt="CUST小包"></div><div class="group-image-wrap"><img src="/img/huawei/3.png" alt="小包"></div></div><div class="group-image-row"></div><div class="group-image-row"></div></div><h2 id="刷机"><a href="#刷机" class="headerlink" title="刷机"></a>刷机</h2><h2 id="Root"><a href="#Root" class="headerlink" title="Root"></a>Root</h2></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>ROM</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Phh-Treble-list</title>
     <link href="/post/Phh-Treble/"/>
     <url>/post/Phh-Treble/</url>
