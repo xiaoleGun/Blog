@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.xiaolegun.cn/img/Miku.png">
 <meta property="article:published_time" content="2022-02-19T12:37:55.000Z">
-<meta property="article:modified_time" content="2022-02-20T02:58:52.018Z">
+<meta property="article:modified_time" content="2022-02-20T03:37:42.610Z">
 <meta property="article:author" content="xiaoleGun">
 <meta property="article:tag" content="GSI">
 <meta name="twitter:card" content="summary_large_image">
@@ -213,7 +213,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2.8k 字
+      3.7k 字
     </span>
   
 
@@ -222,7 +222,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      24 分钟
+      31 分钟
     </span>
   
 
@@ -255,7 +255,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2022年2月20日 上午
+                  本文最后更新于：2022年2月20日 中午
                 
               </p>
             
@@ -362,7 +362,7 @@
 等待完成，输入<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">fastboot reboot<br></code></pre></td></tr></table></figure>
 <img src="/img/huawei/17.png" srcset="/img/loading.gif" lazyload alt="刷入GSI"><br>手机会自动重启，迅速按住音量上键，进入erec，选择格式化Data，输入yes</li>
 </ul>
-<p><img src="/img/huawei/18.png" srcset="/img/loading.gif" lazyload alt="刷入GSI"></p>
+<p><img src="/img/huawei/18.png" srcset="/img/loading.gif" lazyload alt="格式化Data"></p>
 <p>格式化完了以后就可以进入系统了(仅限Kirin960和Kirin970的安卓12以下，Kirin970的安卓12需要执行一遍Root才可以开机)</p>
 <h3 id="进阶篇"><a href="#进阶篇" class="headerlink" title="进阶篇"></a>进阶篇</h3><blockquote>
 <p>如果你追求极致性能，且对system分区没有读写需求的话，我们可以让system分区成为EROFS分区格式。</p>
@@ -391,7 +391,45 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell">mkdir m<br>sudo mount -o loop,ro filename m<br>mkdir out<br>sudo ./mkfs.erofs -zlz4 ./out/system.img ./m<br></code></pre></td></tr></table></figure>
 
 <p>等待它将你的GSI打包为erofs分区格式<br><img src="/img/huawei/23.png" srcset="/img/loading.gif" lazyload alt="打包"><br>然后到tmp/out目录找到它然后刷入到你的手机吧<br><img src="/img/huawei/24.png" srcset="/img/loading.gif" lazyload alt="out"></p>
-<h2 id="Root"><a href="#Root" class="headerlink" title="Root"></a>Root</h2>
+<h2 id="Root"><a href="#Root" class="headerlink" title="Root"></a>Root</h2><blockquote>
+<p>你有两个途径来获取Root，一种是在Phh treble设置–&gt;杂项–&gt;启用动态超级用户，另一种是将Rec替换为Magisk。</p>
+</blockquote>
+<blockquote>
+<p>我主要讲解Magisk的方式，第一种就是一个选项，很简单</p>
+</blockquote>
+<h3 id="上手操作-3"><a href="#上手操作-3" class="headerlink" title="上手操作"></a>上手操作</h3><ul>
+<li>下载<a target="_blank" rel="noopener" href="https://github.com/xiaoleGun/kernel_huawei_kirin970/releases/download/v1.0/magisk_241.img">Magsik</a>(可能需要挂t)</li>
+</ul>
+<p>打开终端输入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">fastboot flash recovery_ramdisk filename<br>fastboot reboot<br></code></pre></td></tr></table></figure>
+
+<p>迅速按音量上键进入erec格式化Data<br><img src="/img/huawei/17.png" srcset="/img/loading.gif" lazyload alt="格式化Data"></p>
+<p>解释: 只是套用华为机制的小伎俩，使重启也不会掉Magisk，原理是erec格式化Data需要重启至rec，但rec分区已经被我们替换为Magisk，所以它每次开机都会记住它需要格式化Data也就默认每次进入rec，所以我们可以重启也不会掉Magisk。</p>
+<ul>
+<li>进入系统<br>如果没有Magisk请自行下载一个Magisk可能需要你修复环境。修复即可。</li>
+</ul>
+<p>至于每次弹出第三方su，请下载MT管理器到systen/xbin删除su即可(暂未发现副作用)</p>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><blockquote>
+<p>主要是换内核及调度</p>
+</blockquote>
+<ul>
+<li><p>Kirin960<br><a target="_blank" rel="noopener" href="https://maimaiguanfan.lanzoux.com/b0evjoybe">点击下载盘古内核</a>作者为@麦麦观饭<br>爵士: Huawei P10, P10 Plus, Mate9, Mate 9 Pro<br>骑士: Honor 9, 8Pro (v9), Huawei Nova2S, tablet M5<br>只需要按照对应的版本下载即可<br><img src="/img/huawei/p10.png" srcset="/img/loading.gif" lazyload alt="爵士"><br><img src="/img/huawei/m5.png" srcset="/img/loading.gif" lazyload alt="骑士"><br>下载完之后，打开终端输入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">fastboot flash kernel filename<br>fastboot reboot<br></code></pre></td></tr></table></figure>
+<p>不出意外的话，会正常开机，请到关于本机查看内核版本号是否正确。<br>然后你需要Root，到Magisk刷入盘古内核Spectrum调度<br><img src="/img/huawei/diaodu.png" srcset="/img/loading.gif" lazyload alt="调度"><br>重启后打开Spectrum<br>选择gameing，会很丝滑，但耗电+114514</p>
+</li>
+<li><p>Kirin970<br><a target="_blank" rel="noopener" href="https://github.com/xiaoleGun/kernel_huawei_kirin970/releases/tag/v1.0">点击下载Miku Kernel</a><br>下载完之后，打开终端输入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">fastboot flash kernel filename<br>fastboot reboot<br></code></pre></td></tr></table></figure>
+<p>不出意外的话，会正常开机，请到关于本机查看内核版本号是否为Miku-Snow。</p>
+</li>
+</ul>
+<blockquote>
+<p>安卓12专属</p>
+</blockquote>
+<p>你需要Root，下载Scene5按照下图进行调度配置</p>
+<p><img src="/img/huawei/shengdian.png" srcset="/img/loading.gif" lazyload alt="省电"><br><img src="/img/huawei/junheng.png" srcset="/img/loading.gif" lazyload alt="均衡"><br><img src="/img/huawei/xingneng.png" srcset="/img/loading.gif" lazyload alt="性能"><br><img src="/img/huawei/game.png" srcset="/img/loading.gif" lazyload alt="极速"></p>
+<p>推荐将Quicksetup设置为极速模式，这样动画丝滑流畅，其它应用使用性能即可，可自行斟酌调整频率</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>写完这些东西后有一种放松的感觉，但又想到酷安还要再排版一遍便很让人麻烦，点名酷安支持Markdown！！！</p>
+
             </div>
             <hr>
             <div>
